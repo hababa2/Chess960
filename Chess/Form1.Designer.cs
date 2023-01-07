@@ -28,34 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(410, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Restart";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 401);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
+			this.Classic = new System.Windows.Forms.Button();
+			this.NineSixty = new System.Windows.Forms.Button();
+			this.SuspendLayout();
+			// 
+			// Classic
+			// 
+			this.Classic.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Classic.Location = new System.Drawing.Point(820, 23);
+			this.Classic.Margin = new System.Windows.Forms.Padding(6);
+			this.Classic.Name = "Classic";
+			this.Classic.Size = new System.Drawing.Size(236, 44);
+			this.Classic.TabIndex = 0;
+			this.Classic.Text = "New Classic Game";
+			this.Classic.UseVisualStyleBackColor = true;
+			this.Classic.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// NineSixty
+			// 
+			this.NineSixty.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.NineSixty.Location = new System.Drawing.Point(820, 76);
+			this.NineSixty.Name = "NineSixty";
+			this.NineSixty.Size = new System.Drawing.Size(236, 45);
+			this.NineSixty.TabIndex = 1;
+			this.NineSixty.Text = "New Chess960 Game";
+			this.NineSixty.UseVisualStyleBackColor = true;
+			this.NineSixty.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// Form1
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(1076, 771);
+			this.Controls.Add(this.NineSixty);
+			this.Controls.Add(this.Classic);
+			this.Margin = new System.Windows.Forms.Padding(6);
+			this.Name = "Form1";
+			this.Text = "Form1";
+			this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-    }
+        private System.Windows.Forms.Button Classic;
+		private System.Windows.Forms.Button NineSixty;
+	}
 }
 
